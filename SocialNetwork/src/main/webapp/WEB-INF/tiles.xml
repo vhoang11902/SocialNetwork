@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/dashboard.jsp" />
+    </definition>
+    
+    <definition name="listPosts" extends="baseLayout">
+        <put-attribute name="title" value="List Posts" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/post/listPosts.jsp" />
+    </definition>
+    
+    <definition name="dashboard" extends="baseLayout">
+        <put-attribute name="title" value="Dashboard" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/dashboard.jsp" />
+    </definition>
+    
+    <definition name="listSurveys" extends="baseLayout">
+        <put-attribute name="title" value="List Surveys" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/survey/listSurveys.jsp" />
+    </definition>
+    
+    <definition name="handleSurvey" extends="baseLayout">
+        <put-attribute name="title" value="Thêm khảo sát" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/survey/handleSurvey.jsp" />
+    </definition>
+    
+    <definition name="handleUser" extends="baseLayout">
+        <put-attribute name="title" value="Thêm người dùng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/user/handleUser.jsp" />
+    </definition>
+    
+    <definition name="listUsers" extends="baseLayout">
+        <put-attribute name="title" value="List Users" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/user/listUsers.jsp" />
+    </definition>
+    
+    <definition name="listConnections" extends="baseLayout">
+        <put-attribute name="title" value="List Connections" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/user/listConnections.jsp" />
+    </definition>
+    
+    <definition name="listComments" extends="baseLayout">
+        <put-attribute name="title" value="List Comments" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/comment/listComments.jsp" />
+    </definition>
+    
+    <definition name="listReactions" extends="baseLayout">
+        <put-attribute name="title" value="List Comments" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/reaction/listReactions.jsp" />
+    </definition>
+    
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/login.jsp" />
+    </definition>
+</tiles-definitions>
